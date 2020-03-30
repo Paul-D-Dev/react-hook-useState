@@ -17,7 +17,7 @@ function CounterHooks() {
         <h1>Function Counter with hook</h1>
         <input type="number" value={count} onChange={e => setCount(e.target.value)}/>
         <p>Le compteur est  à : {count} </p>
-        <button onClick={() => setCount((count + 1))}>
+        <button onClick={() => setCount((Number(count) + 1))}>
             +1
         </button>
         <button onClick={() => setCount(under(count))}>
